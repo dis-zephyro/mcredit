@@ -109,6 +109,8 @@ body {
   display: block;
 }
 .top {
+  width: 100%;
+  display: block;
   position: relative;
 }
 .bottom {

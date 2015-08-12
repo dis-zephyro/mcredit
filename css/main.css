@@ -115,21 +115,22 @@ body {
   position: relative;
 }
 .content {
-  left: 50px;
-  right: 50px;
-  bottom: 50px;
-  text-align: right;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+  font-size: 0;
+  line-height: 0;
   position: absolute;
 }
 .content .btn {
+  float: right;
+  overflow: hidden;
+  height: 44px;
   border: none;
   outline: none;
   display: inline-block;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 30px;
   text-align: center;
-  padding: 10px 20px;
+  padding: 10px 15px;
   margin-left: 20px;
   background: #3b8732;
   text-decoration: none;
@@ -137,16 +138,24 @@ body {
   -moz-box-shadow: inset -2px 3px 20px 0px rgba(0, 0, 0, 0.6);
   box-shadow: inset -2px 3px 20px 0px rgba(0, 0, 0, 0.6);
 }
+.content .btn span {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+}
 .content .input {
-  width: 170px;
+  float: right;
+  overflow: hidden;
+  height: 44px;
+  width: 120px;
   border: none;
   outline: none;
   padding: 10px;
   display: inline-block;
   color: #404140;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 24px;
   text-align: center;
   background: #7e7e7e;
   -webkit-box-shadow: inset -2px 3px 20px 0px rgba(0, 0, 0, 0.6);
@@ -175,7 +184,7 @@ body {
     display: block;
   }
   .content {
-    text-align: left;
+    right: 15%;
   }
 }
 /* Typography

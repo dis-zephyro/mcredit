@@ -13,9 +13,6 @@
         <link rel="stylesheet" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
 
         <link rel="stylesheet" href="css/main.css">
-
-        <!--link rel="stylesheet/less" href="less/main.less">
-        <script src="js/vendor/less.min.js"></script-->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     
@@ -38,8 +35,12 @@
                 </div>
                 <div class="content">
                     <div class="clearfix">
-                        <button type="submit" class="btn"><span>оставить<br/>заявку</span></button>
-                        <input type="text" class="input" placeholder="ваш телефон">
+                        <form class="form" name="form" method="POST" action="javascript:void(0);">
+                            <button type="submit" class="btn"><span>оставить<br/>заявку</span></button>
+                            <label class="phone none required">
+                                <input type="text" class="input" name="phone" placeholder="ваш телефон">
+                            </label>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -48,6 +49,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+        <script src="js/vendor/validator.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
